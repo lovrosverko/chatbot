@@ -12,12 +12,12 @@ body {
     flex-direction: column;
 }
 
-#response-container {
+response-container {
   width: 80%;
   margin: 0 auto;
 }
 
-#chatbox {
+chatbox {
   width: 80%; /* Širina chatboxa 80% */
   margin: 0 auto; /* Centriranje chatboxa */
   height: 300px;
