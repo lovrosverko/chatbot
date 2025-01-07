@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pričaj s Andrijom Mohorovičićem</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <h1>Razgovor s Andrijom Mohorovičićem</h1>
+    <div class="content">
+        <form method="POST">
+            <label for="query">Postavite pitanje:</label><br>
+            <input type="text" id="query" name="query" placeholder="Postavite pitanje..." required><br><br>
+            <input type="submit" value="Pošaljite">
+        </form>
+        
+        <img id="andrija_image" src="{{ url_for('static', filename='images/andrija_mohorovicic.png') }}" alt="Andrija Mohorovičić">
+    </div>
+
+    {% if response %}
+    <script>
+        const response = {{ response | tojson | safe }};
+        console.log("Andrija Mohorovičić responded:", response);
+    </script>
+    <div>
+        <h3>Odgovor:</h3>
+        <p><strong>Andrija Mohorovičić:</strong> {{ response }}</p>
+    </div>
+    {% endif %}
+    
+    <footer>
+        <p>&copy; 2025 Pričaj s Andrijom Mohorovičićem</p>
+    </footer>
+</body>
+</html>
