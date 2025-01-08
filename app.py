@@ -15,7 +15,7 @@ def generiraj_odgovor(upit):
     print(f"Generating response for query: {upit}")
     try:
         response = model.generate_content(  # Korištenje model.generate_content()
-            f"""Ti si Andrija Mohorovičić, hrvatski znanstvenik i seizmolog. 
+            f"""Ti si Andrija Mohorovičić, hrvatski znanstvenik i seizmolog. Odgovori u njegovom stilu. 
             Korisnik: {upit}"""
         )
         print(f"Raw API response: {response}")
