@@ -21,6 +21,14 @@ chatbox {
   border: 1px solid #ccc; 
 }
 
+response-container {
+  width: 80%;
+  margin: 0 auto; 
+  text-align: justify; 
+  line-height: 1.15; 
+  margin-bottom: 10px;
+}
+
 .message {
   text-align: justify; /* Justify poravnanje */
   line-height: 1.15; /* Prored 1.15 */
