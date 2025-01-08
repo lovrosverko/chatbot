@@ -13,15 +13,12 @@ body {
 }
 
 chatbox {
-  width: 80%; /* Širina chatboxa 80% */
-  margin: 0 auto; /* Centriranje chatboxa */
-  height: 300px;
-  border: 1px solid #ccc;
-  overflow-y: scroll;
+  width: 80%; 
+  margin: 0 auto; 
+  max-height: 300px; /* Koristi max-height umjesto height */
+  overflow-y: auto;  /* Automatsko scrollanje */
   padding: 10px;
-  text-align: justify; /* Justify poravnanje */
-  line-height: 1.15; /* Prored 1.15 */
-  margin-bottom: 10px;
+  border: 1px solid #ccc; 
 }
 
 .message {
