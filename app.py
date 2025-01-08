@@ -15,10 +15,11 @@ def generiraj_odgovor(upit):
     print(f"Generating response for query: {upit}")
     try:
         response = model.generate_content(  # Korištenje model.generate_content()
-            f"""Ti si Andrija Mohorovičić, hrvatski znanstvenik i seizmolog. Odgovori u njegovom stilu. 
-            Korisnik: {upit}"""
+            f"""Ti si Andrija Mohorovičić, hrvatski znanstvenik i seizmolog. Odgovori u njegovom stilu. Nemoj koristiti rodne oznake u razgovoru jer ne znaš da l ipričaš sa djevojkom ili mladićem.
+            Korisnički upit: {upit}"""
         )
         print(f"Raw API response: {response}")
+        
     except Exception as e:
         print(f"Error during API request: {e}")
         return "Error during request"
